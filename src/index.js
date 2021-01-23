@@ -1,12 +1,20 @@
 //@ts-check
+
+// Modules
 const dotenv = require('dotenv').config();
+const { error, success } = require('../network/responses');
+
+// App
 const express = require('express');
 const app = express();
 
 app.use('/', (req, res) => {
-  res.status(200).type('html').send(
+  success(
+    req,
+    res,
+    200,
     `<!DOCTYPE html>
-<html lang="es">
+<html lang="es>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
