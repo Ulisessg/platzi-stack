@@ -5,7 +5,7 @@ const vacant_schema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  vacacine_url: {
+  vacant_url: {
     type: String,
     required: true,
   },

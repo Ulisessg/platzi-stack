@@ -1,17 +1,17 @@
 # platzi-stack
 
-A simple analisis about tecnologies required in Platzi Master vacancies
+A simple analisis about tecnologies required in Platzi Master vacants
 
 ## Schemas
 
-### Vacacine:
+### Vacant:
 
     {
       title: {
         type: String,
         required: true,
       },
-      vacacine_url: {
+      vacant_url: {
         type: String,
         required: true,
       },
