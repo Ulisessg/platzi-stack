@@ -1,0 +1,29 @@
+{
+  "name": "platzi-stack",
+  "version": "1.0.0",
+  "description": "A simple analisis about tecnologies required in Platzi Master vacancies",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon ./src/index.js -L"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ulisessg/platzi-stack.git"
+  },
+  "keywords": [],
+  "author": "UlisesSG <ukisessg@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ulisessg/platzi-stack/issues"
+  },
+  "homepage": "https://github.com/Ulisessg/platzi-stack#readme",
+  "dependencies": {
+    "bcrypt": "5.0.0",
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "mongoose": "5.11.13"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.7"
+  }
+}
