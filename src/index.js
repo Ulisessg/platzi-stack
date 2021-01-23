@@ -11,7 +11,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //  Serve static files
-app.use(express.static(join(__dirname, 'static')));
+app.use(
+  express.static(join(__dirname, 'static'), {
+    extensions: ['html', 'htm'],
+  }),
+);
 
 //  Routes
 const info_route = require('./api/info/network');
