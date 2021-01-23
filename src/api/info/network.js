@@ -9,29 +9,6 @@ const controller = require('./index');
 
 const routes = Router();
 
-//  Return index page
-
-routes.get('/', (req, res) => {
-  page(
-    req,
-    res,
-    200,
-    `<!DOCTYPE html>
-<html lang="es>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test /A</title>
-  </head>
-  <body>
-    <h1>Hello buddy</h1>
-    <h2>Goodbye buddy</h2>
-  </body>
-</html>
-`,
-  );
-});
-
 //  Create vacant
 
 routes.post('/create-vacant', (req, res) => {
