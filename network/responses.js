@@ -1,9 +1,15 @@
 function success(req, res, statusCode = 200, message = 'Success') {
-  res.status(statusCode).json(message);
+  res.status(statusCode).json({
+    error: true,
+    message,
+  });
 }
 
 function error(req, res, statusCode = 500, message = 'Internal server error') {
-  res.status(statusCode).json(message);
+  res.status(statusCode).json({
+    error: true,
+    message,
+  });
 }
 
 function page(req, res, statusCode = 200, page) {
