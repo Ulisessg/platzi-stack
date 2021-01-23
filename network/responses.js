@@ -1,6 +1,6 @@
 function success(req, res, statusCode = 200, message = 'Success') {
   res.status(statusCode).json({
-    error: true,
+    error: false,
     message,
   });
 }
