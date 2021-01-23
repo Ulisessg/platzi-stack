@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const vacacine_schema = new mongoose.Schema({
+const vacant_schema = new mongoose.Schema({
   title: {
     type: String,
     required: true,
@@ -31,4 +31,4 @@ const vacacine_schema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model('vacacines', vacacine_schema);
+module.exports = mongoose.model('vacants', vacant_schema);
