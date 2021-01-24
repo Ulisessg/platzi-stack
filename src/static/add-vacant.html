@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://firebasestorage.googleapis.com/v0/b/web-projects-50e7e.appspot.com/o/images%2FSEO%2Flogo.png?alt=media&token=65636b9b-0dcd-4845-b66a-56e2c5b762b0"
+      type="image/png"
+    />
+    <script src="/js/create-vacant.js" defer="defer"></script>
+    <link rel="stylesheet" href="/css/add-vacant.css" />
+    <title>Add vacant</title>
+  </head>
+  <body>
+    <main>
+      <form id="form" method="post">
+        <label for="title">
+          Job title
+          <input type="text" name="title" id="title" placeholder="Job title" />
+        </label>
+        <label for="url">
+          Vacant url
+          <input type="text" name="url" id="url" placeholder="Vacant url" />
+        </label>
+        <label for="techologies">
+          Techologies used
+          <input
+            type="text"
+            name="techologies"
+            id="techologies"
+            placeholder="Techologies used, separated with comma"
+          />
+        </label>
+        <label for="languages">
+          Languages
+          <input
+            type="text"
+            name="languages"
+            id="languages"
+            placeholder="Languages used, separated with comma"
+          />
+        </label>
+
+        <!-- English, multiple selection -->
+
+        <label for="english">
+          English level
+          <select name="english" id="english">
+            <option disabled="disabled" selected="selected">
+              Select your english level
+            </option>
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="B1">B1</option>
+            <option value="B2">B2</option>
+            <option value="C1">C1</option>
+            <option value="A2">C2</option>
+            <option value="C1">C1</option>
+            <option value="null">null</option>
+          </select>
+        </label>
+
+        <label for="presencial">
+          Presencial?
+          <select name="precencial" id="precencial">
+            <option
+              value="Select if vacant is precencial"
+              selected="selected"
+              disabled="disabled"
+            >
+              Select if vacant is precencial
+            </option>
+            <option value="remote">Remote</option>
+            <option value="precencial">Precencial</option>
+          </select>
+        </label>
+
+        <label for="salary"
+          >Salary range
+          <input
+            type="text"
+            name="salary"
+            id="salary"
+            placeholder="Insat salary range, beggining with less and separated with comma"
+          />
+        </label>
+        <button type="button" id="send_data">Send data</button>
+      </form>
+
+      <div id="message"></div>
+    </main>
+  </body>
+</html>

@@ -19,7 +19,7 @@ const vacant_schema = new mongoose.Schema({
   },
   english_level: {
     type: null || String,
-    required: true,
+    required: false,
   },
   remote: {
     type: Boolean,
