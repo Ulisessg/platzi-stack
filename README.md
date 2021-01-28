@@ -1,6 +1,6 @@
 # platzi-stack
 
-A simple analisis about tecnologies required in Platzi Master vacants
+A simple analisis about languages/tecnologies required in Platzi Master vacants.
 
 ## Schemas
 
